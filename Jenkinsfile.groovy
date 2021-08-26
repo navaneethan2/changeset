@@ -3,7 +3,7 @@ pipeline {
 
     stages{
         stage ('checkout') {
-            when{ changeset "**"}
+            when{ changeset "**/*.*"}
 
             steps {
                 sh "echo I will build now"
